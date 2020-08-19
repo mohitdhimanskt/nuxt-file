@@ -14,13 +14,11 @@
 <script>
 export default {
   props: ['blok'],
-
   data () {
     return {
       currentSlide: 0
     }
   },
-
   computed: {
     slide () {
       let slides = this.blok.body.filter((slide, index) => {
@@ -32,7 +30,6 @@ export default {
       return null
     }
   },
-
   methods: {
     handleDotClick (index) {
       this.currentSlide = index
@@ -47,7 +44,6 @@ export default {
   text-align: center;
   margin: 30px 0;
 }
-
 .teaser__pag-dot {
   text-indent: -9999px;
   border: 0;
@@ -59,7 +55,6 @@ export default {
   background-color: #ccc;
   -webkit-appearance: none;
   cursor: pointer;
-
   &--current {
     background-color: #000;
   }
