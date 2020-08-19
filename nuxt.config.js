@@ -35,6 +35,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    '~/plugins/components'
   ],
   /*
   ** Auto import components
@@ -51,7 +52,17 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    [
+      'storyblok-nuxt',
+      {
+        accessToken: 'xcB7R3V41wIWRDtjkMWOaAtt',
+        cacheProvider: 'memory'
+      }
+    ]
+
   ],
+ 
+ 
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
